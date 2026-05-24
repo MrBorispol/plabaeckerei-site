@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLA Bäckerei</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto 26px;
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(46px, 9vw, 82px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .blue {
+      color: #22bde8;
+    }
+
+    .subtitle {
+      font-size: clamp(18px, 3vw, 28px);
+      letter-spacing: 0.08em;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      font-size: clamp(22px, 4vw, 36px);
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .dot {
+      color: #22bde8;
+      padding: 0 12px;
+    }
+
+    .location {
+      font-size: clamp(18px, 3vw, 26px);
+      margin-bottom: 38px;
+    }
+
+    .whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: #17c653;
+      color: white;
+      text-decoration: none;
+      padding: 20px 32px;
+      border-radius: 20px;
+      font-size: clamp(20px, 3vw, 30px);
+      font-weight: 700;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+    }
+
+    .whatsapp span {
+      display: block;
+      font-size: 0.78em;
+      font-weight: 400;
+      margin-top: 4px;
+    }
+
+    .coming {
+      margin-top: 56px;
+      color: #999999;
+      font-size: 22px;
+      letter-spacing: 0.22em;
+    }
+
+    @media (max-width: 520px) {
+      .services {
+        line-height: 1.5;
+      }
+
+      .dot {
+        padding: 0 6px;
+      }
+
+      .whatsapp {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <img src="logo.png" alt="PLA Bäckerei Logo" class="logo" />
+
+    <h1><span class="blue">PLA</span> Bäckerei</h1>
+
+    <p class="subtitle">Etwas Besonderes entsteht.</p>
+
+    <p class="services">
+      3D-Druck <span class="dot">•</span> Design <span class="dot">•</span> Souvenirs
+    </p>
+
+    <p class="location">📍 Salzkammergut, Österreich</p>
+
+    <a class="whatsapp" href="https://wa.me/436767907753" target="_blank">
+      💬
+      <div>
+        Kontakt via WhatsApp
+        <span>+43 676 7907753</span>
+      </div>
+    </a>
+
+    <p class="coming">Coming soon.</p>
+  </main>
+</body>
+</html>
